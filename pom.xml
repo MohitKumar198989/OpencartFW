@@ -68,7 +68,6 @@
 		</dependency>
 
 
-
 		<dependency>
 			<groupId>com.aventstack</groupId>
 			<artifactId>extentreports</artifactId>
@@ -87,6 +86,11 @@
 			<version>${aspectj.version}</version>
 		</dependency>
 
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.30</version>
+		</dependency>
 
 	</dependencies>
 
@@ -113,14 +117,15 @@
 					<forkCount>3</forkCount>
 					<reuseForks>true</reuseForks>
 					<suiteXmlFiles>
-						<suiteXmlFile>src/test/resources/testrunners/testng_regression.xml</suiteXmlFile>
+						<suiteXmlFile>
+							src/test/resources/testrunners/testng_regression.xml</suiteXmlFile>
 					</suiteXmlFiles>
 
 					<argLine>
 						-javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
 					</argLine>
 				</configuration>
-				
+
 				<dependencies>
 					<dependency>
 						<groupId>org.aspectj</groupId>
@@ -131,7 +136,6 @@
 
 
 			</plugin>
-
 
 
 		</plugins>
