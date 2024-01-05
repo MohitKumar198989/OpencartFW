@@ -31,8 +31,7 @@
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
-			<version>7.8.0</version>
-<!--			<scope>test</scope>-->
+			<version>7.0.0</version>
 		</dependency>
 
 
@@ -68,20 +67,14 @@
 			<version>1.0-beta</version>
 		</dependency>
 
+
+
 		<dependency>
 			<groupId>com.aventstack</groupId>
 			<artifactId>extentreports</artifactId>
 			<version>${extentreports-version}</version>
 		</dependency>
 
-
-		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-			<version>1.18.30</version>
-		</dependency>
-
-		
 		<dependency>
 			<groupId>io.qameta.allure</groupId>
 			<artifactId>allure-testng</artifactId>
@@ -94,11 +87,11 @@
 			<version>${aspectj.version}</version>
 		</dependency>
 
-	
 
 	</dependencies>
 
 	<build>
+
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -120,14 +113,12 @@
 					<forkCount>3</forkCount>
 					<reuseForks>true</reuseForks>
 					<suiteXmlFiles>
-						<suiteXmlFile>
-							src/test/resources/testrunners/testng_regression.xml</suiteXmlFile>
+						<suiteXmlFile>src/test/resources/testrunners/testng_regression.xml</suiteXmlFile>
 					</suiteXmlFiles>
-					
+
 					<argLine>
 						-javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
 					</argLine>
-
 				</configuration>
 				
 				<dependencies>
@@ -137,11 +128,13 @@
 						<version>${aspectj.version}</version>
 					</dependency>
 				</dependencies>
-				
-				
+
 
 			</plugin>
 
+
+
 		</plugins>
+
 	</build>
 </project>
