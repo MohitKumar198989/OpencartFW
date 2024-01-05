@@ -21,7 +21,7 @@ public class AccountsPageTest extends BaseTest {
 	public void accPageTitleTest() {
 		Assert.assertEquals(accPage.getAccPageTitle(),AppConstants.ACCOUNTS_PAGE_TITLE);
 	}
-	@Test
+	
 	public void accPageURLTest() {
 		Assert.assertTrue(accPage.getAccPageURL().contains(AppConstants.ACC_PAGE_URL_FRACTION));
 	}

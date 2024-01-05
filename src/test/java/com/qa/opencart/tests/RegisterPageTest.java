@@ -1,5 +1,6 @@
 package com.qa.opencart.tests;
 
+
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
@@ -9,14 +10,12 @@ import com.qa.opencart.base.BaseTest;
 import com.qa.opencart.constants.AppConstants;
 import com.qa.opencart.utils.ExcelUtil;
 
-public class RegisterPageTest extends BaseTest{
-	
-	
+public class RegisterPageTest extends BaseTest {
+
 	@BeforeClass
 	public void regSetup() {
 		registerPage = loginPage.navigateToRegisterPage();
 	}
-	
 
 	public String getRandomEmailID() {
 		return "testautomation" + System.currentTimeMillis() + "@opencart.com";
@@ -24,7 +23,6 @@ public class RegisterPageTest extends BaseTest{
 		// return "testautomation" + UUID.randomUUID()+"@gmail.com";
 
 	}
- 
 	
 	
 //	@DataProvider
@@ -35,9 +33,9 @@ public class RegisterPageTest extends BaseTest{
 //				{ "Karishma", "automation", "9876544434", "test@123", "no" },
 //				{ "Jyothi", "auto", "9876522234", "test@123", "yes" }
 //
-//				
-//			};
+//		};
 //	}
+	
 	
 	@DataProvider
 	public Object[][] getUserRegTestExcelData() {
@@ -46,17 +44,17 @@ public class RegisterPageTest extends BaseTest{
 	}
 	
 	
+
+	//run = total rows
+	//params = total cols
 	@Test(dataProvider = "getUserRegTestExcelData")
 	public void userRegTest(String firstName, String lastName, String telephone, String password, String subscribe) {
 
-			boolean isRegDone = registerPage.userRegisteration(firstName, lastName, getRandomEmailID(), telephone, password,
-					subscribe);
+		boolean isRegDone = registerPage.userRegisteration(firstName, lastName, getRandomEmailID(), telephone, password,
+				subscribe);
 
-			Assert.assertTrue(isRegDone);
+		Assert.assertTrue(isRegDone);
 
-		}
-	
-	
-
+	}
 
 }

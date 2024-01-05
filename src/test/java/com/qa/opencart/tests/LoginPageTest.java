@@ -19,8 +19,6 @@ import io.qameta.allure.Story;
 @Story("US 101: Login page features")
 @Feature("F50: Feature login page")
 @Listeners(TestAllureListener.class)
-
-
 public class LoginPageTest extends BaseTest {
 
 	
@@ -32,7 +30,7 @@ public class LoginPageTest extends BaseTest {
 		Assert.assertEquals(actTitle, AppConstants.LOGIN_PAGE_TITLE);
 	}
 
-	@Description("login page url test verficication...")
+	@Description("login page url test...")
 	@Severity(SeverityLevel.NORMAL)
 	@Test(priority = 2)
 	public void loginPageURLTest() {
