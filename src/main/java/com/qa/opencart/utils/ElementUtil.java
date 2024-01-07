@@ -403,10 +403,10 @@ public class ElementUtil {
 			}	
 		}
 		catch (TimeoutException e){
-			System.out.println(title +"title value is not present....");
+			System.out.println(title +" title value is not present....");
 			e.printStackTrace();
  		}
-		return null;
+		return driver.getTitle();
 		
 	}
 	
