@@ -8,9 +8,7 @@
 
     stages 
     {
-        stage('Build') 
-        {
-            stage("build"){
+       stage("build"){
             steps{
                 echo("build the project")
             }
