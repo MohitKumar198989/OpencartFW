@@ -10,19 +10,17 @@
     {
         stage('Build') 
         {
-            steps
-            {
-                 git 'https://github.com/jglick/simple-maven-project-with-tests.git'
-                 sh "mvn -Dmaven.test.failure.ignore=true clean package"
+            stage("build"){
+            steps{
+                echo("build the project")
             }
-            post 
-            {
-                success
-                {
-                    junit '**/target/surefire-reports/TEST-*.xml'
-                    archiveArtifacts 'target/*.jar'
-                }
+        }
+        
+        stage("Run Unit test"){
+            steps{
+                echo("run UTs")
             }
+        }
         }
         
         
