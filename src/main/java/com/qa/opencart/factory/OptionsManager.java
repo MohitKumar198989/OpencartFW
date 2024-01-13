@@ -26,6 +26,14 @@ public class OptionsManager {
 		//if(Boolean.parseBoolean(System.getProperty("headless").trim())) co.addArguments("--headless");
 
 		if(Boolean.parseBoolean(prop.getProperty("incognito").trim())) co.addArguments("--incognito");
+		
+		if(Boolean.parseBoolean(prop.getProperty("remote"))) {
+			co.setCapability("browserName", "chrome");
+			
+	
+		}
+		
+		
 		return co;
 	}
 	
