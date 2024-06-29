@@ -10,6 +10,8 @@ import org.openqa.selenium.WebElement;
 import com.qa.opencart.constants.AppConstants;
 import com.qa.opencart.utils.ElementUtil;
 
+import io.qameta.allure.Step;
+
 public class AccountsPage {
 
 	private WebDriver driver;
@@ -29,7 +31,7 @@ public class AccountsPage {
 		}
 	
 	//page actions :
-	
+	@Step("get account page title")
 	public String getAccPageTitle()
 	{
 		String title = eleUtil.waitForTitleIs(AppConstants.ACCOUNTS_PAGE_TITLE, AppConstants.SHORT_DEFAUTT_WAIT);
