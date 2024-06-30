@@ -39,6 +39,7 @@ public class AccountsPage {
 		return title;
 	}
 	
+	@Step("get account page URL")
 	public String getAccPageURL()
 	{
 		String url = eleUtil.waitForURLContains(AppConstants.ACC_PAGE_URL_FRACTION, AppConstants.SHORT_DEFAUTT_WAIT);
