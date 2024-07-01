@@ -46,7 +46,7 @@ public class AccountsPage {
 		System.out.println("Acc page url:"+url);
 		return url;
 	}
-	
+	@Step ("get info of logout link available on the Account Page")
 	public boolean isLogutLinkExist()
 	{
 		return eleUtil.waitForVisibilityOfElement(logoutLink, AppConstants.SHORT_DEFAUTT_WAIT).isDisplayed();
