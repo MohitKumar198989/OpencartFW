@@ -52,6 +52,7 @@ public class AccountsPage {
 		return eleUtil.waitForVisibilityOfElement(logoutLink, AppConstants.SHORT_DEFAUTT_WAIT).isDisplayed();
 	}
 	
+	@Step("get logout for the application")
 	public void logout() {
 		if(isLogutLinkExist()) {
 			eleUtil.doClick(logoutLink);
