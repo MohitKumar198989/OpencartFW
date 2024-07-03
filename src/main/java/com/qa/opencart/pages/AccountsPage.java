@@ -58,7 +58,7 @@ public class AccountsPage {
 			eleUtil.doClick(logoutLink);
 		}
 	}
-	
+	@Step ("Search field is display then retrun true")
 	public boolean isSearchFieldExist() {
 		return eleUtil.waitForVisibilityOfElement(search,AppConstants.SHORT_DEFAUTT_WAIT).isDisplayed();
 	}
