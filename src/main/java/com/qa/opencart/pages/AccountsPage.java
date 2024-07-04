@@ -63,7 +63,7 @@ public class AccountsPage {
 		return eleUtil.waitForVisibilityOfElement(search,AppConstants.SHORT_DEFAUTT_WAIT).isDisplayed();
 	}
 	
-	@Step ("get Account header")
+	@Step ("get Account headers List")
 	public List<String> getAccountsHeaders() {
 		List<WebElement> headersList = eleUtil.waitForVisibilityOfElements(accHeaders,AppConstants.MEDIUM_DEFAUTT_WAIT);
 		List<String> headersValList = new ArrayList<String>();
