@@ -74,7 +74,9 @@ public class AccountsPage {
 		return headersValList;
 	}
 	
+	
 	//Data provider used, to clear the previous text .clear() is used 
+	@Step ("search for the product")
 	public SearchResultsPage doSearch(String searchKey) {
 		eleUtil.waitForVisibilityOfElement(search, AppConstants.MEDIUM_DEFAUTT_WAIT).clear();
 		eleUtil.waitForVisibilityOfElement(search, AppConstants.MEDIUM_DEFAUTT_WAIT).sendKeys(searchKey);
