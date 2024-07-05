@@ -74,7 +74,11 @@ public class AccountsPage {
 		return headersValList;
 	}
 	
-	
+	/**
+	 * 
+	 * @param searchKey
+	 * @return
+	 */
 	//Data provider used, to clear the previous text .clear() is used 
 	@Step ("search for the product")
 	public SearchResultsPage doSearch(String searchKey) {
