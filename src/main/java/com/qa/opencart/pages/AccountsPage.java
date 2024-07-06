@@ -25,6 +25,10 @@ public class AccountsPage {
 	
 	
 	// page const...
+	/**
+	 * 
+	 * @param driver
+	 */
 	public AccountsPage(WebDriver driver) {
 		this.driver=driver;
 		eleUtil = new ElementUtil(this.driver);
