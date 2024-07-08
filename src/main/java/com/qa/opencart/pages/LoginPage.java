@@ -59,6 +59,12 @@ public class LoginPage {
 		return eleUtil.waitForVisibilityOfElement(logo, AppConstants.SHORT_DEFAUTT_WAIT).isDisplayed();
 	
 	}
+	/**
+	 * 
+	 * @param username
+	 * @param pwd
+	 * @return
+	 */
 	
 	@Step("username is : {0} and password {1} ")
 	public AccountsPage doLogin(String username, String pwd) {
