@@ -29,7 +29,10 @@ public class ProductInfoPage {
 
 	
 	// page const...
-
+/**
+ * 
+ * @param driver
+ */
 	public ProductInfoPage(WebDriver driver) {
 		this.driver = driver;
 		eleUtil = new ElementUtil(this.driver);
