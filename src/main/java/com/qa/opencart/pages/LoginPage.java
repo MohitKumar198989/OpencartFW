@@ -24,6 +24,10 @@ public class LoginPage {
 	
 	
 	//page const...
+	/**
+	 * 
+	 * @param driver
+	 */
 	public LoginPage(WebDriver driver) {
 		this.driver=driver;
 		eleUtil =new ElementUtil(this.driver);
