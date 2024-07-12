@@ -6,6 +6,8 @@ import org.openqa.selenium.WebDriver;
 import com.qa.opencart.constants.AppConstants;
 import com.qa.opencart.utils.ElementUtil;
 
+import io.qameta.allure.Step;
+
 public class RegisterPage {
 
 
@@ -34,7 +36,17 @@ public class RegisterPage {
 		eleUtil = new ElementUtil(this.driver);
 	}
 	
-	
+	/**
+	 * 
+	 * @param firstName
+	 * @param lastName
+	 * @param email
+	 * @param telephone
+	 * @param password
+	 * @param subscribe
+	 * @return
+	 */
+	@Step("User Registeration")
 	public boolean userRegisteration(String firstName, String lastName, String email, String telephone, String password,
 			String subscribe) {
 
