@@ -19,7 +19,11 @@ public class SearchResultsPage {
 		this.driver = driver;
 		eleUtil = new ElementUtil(this.driver);
 	}
-	
+	/**
+	 * 
+	 * @param productName
+	 * @return
+	 */
 	public ProductInfoPage selectProduct(String productName) {
 		eleUtil.waitForVisibilityOfElement(By.linkText(productName), AppConstants.MEDIUM_DEFAUTT_WAIT).click();
 		return new ProductInfoPage(driver); 
