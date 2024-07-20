@@ -6,6 +6,8 @@ import org.openqa.selenium.WebDriver;
 import com.qa.opencart.constants.AppConstants;
 import com.qa.opencart.utils.ElementUtil;
 
+import io.qameta.allure.Step;
+
 public class SearchResultsPage {
 
 	private WebDriver driver;
@@ -24,6 +26,7 @@ public class SearchResultsPage {
 	 * @param productName
 	 * @return
 	 */
+	@Step("Select Product")
 	public ProductInfoPage selectProduct(String productName) {
 		eleUtil.waitForVisibilityOfElement(By.linkText(productName), AppConstants.MEDIUM_DEFAUTT_WAIT).click();
 		return new ProductInfoPage(driver); 
