@@ -26,7 +26,7 @@ public class SearchResultsPage {
 	 * @param productName
 	 * @return
 	 */
-	@Step("Select Product")
+	@Step("Select Product from SearchResultsPage")
 	public ProductInfoPage selectProduct(String productName) {
 		eleUtil.waitForVisibilityOfElement(By.linkText(productName), AppConstants.MEDIUM_DEFAUTT_WAIT).click();
 		return new ProductInfoPage(driver); 
