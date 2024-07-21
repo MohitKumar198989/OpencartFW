@@ -16,7 +16,10 @@ public class SearchResultsPage {
 
 
 	// page const...
-
+/**
+ * 
+ * @param driver
+ */
 	public SearchResultsPage(WebDriver driver) {
 		this.driver = driver;
 		eleUtil = new ElementUtil(this.driver);
