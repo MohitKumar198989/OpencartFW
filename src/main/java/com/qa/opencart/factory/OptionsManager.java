@@ -15,6 +15,7 @@ public class OptionsManager {
 	private FirefoxOptions fo;
 	private EdgeOptions eo;
 
+	
 	public OptionsManager(Properties prop) {
 		this.prop = prop;
 	}
