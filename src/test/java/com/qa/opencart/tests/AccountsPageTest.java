@@ -10,9 +10,12 @@ import org.testng.annotations.Test;
 import com.qa.opencart.base.BaseTest;
 import com.qa.opencart.constants.AppConstants;
 
+import io.qameta.allure.Step;
+
 public class AccountsPageTest extends BaseTest {
 
 	@BeforeClass
+	@Step("Login to the app")
 	public void accSetup() {
 		accPage = loginPage.doLogin(prop.getProperty("username"), prop.getProperty("password"));;
 	}
