@@ -20,6 +20,7 @@ public class AccountsPageTest extends BaseTest {
 		accPage = loginPage.doLogin(prop.getProperty("username"), prop.getProperty("password"));;
 	}
 	
+	@Step("Verify the Account Page title")
 	@Test
 	public void accPageTitleTest() {
 		Assert.assertEquals(accPage.getAccPageTitle(),AppConstants.ACCOUNTS_PAGE_TITLE);
