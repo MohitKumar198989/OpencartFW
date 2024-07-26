@@ -31,6 +31,7 @@ public class AccountsPageTest extends BaseTest {
 		Assert.assertTrue(accPage.getAccPageURL().contains(AppConstants.ACC_PAGE_URL_FRACTION));
 	}
 	
+	@Step("Verify the Logout link exist")
 	@Test
 	public void isLogoutLinkExistTest() {
 		Assert.assertTrue(accPage.isLogutLinkExist());
