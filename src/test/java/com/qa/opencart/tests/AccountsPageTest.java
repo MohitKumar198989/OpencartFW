@@ -36,7 +36,7 @@ public class AccountsPageTest extends BaseTest {
 	public void isLogoutLinkExistTest() {
 		Assert.assertTrue(accPage.isLogutLinkExist());
 	}
-	
+	@Step("Verify the SearchFieldExist on AccountPage")
 	@Test
 	public void isSearchFieldExistTest() {
 		Assert.assertTrue(accPage.isSearchFieldExist());
