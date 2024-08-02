@@ -1,6 +1,5 @@
 package com.qa.opencart.tests;
 
-import java.util.Collections;
 import java.util.List;
 
 import org.testng.Assert;
@@ -10,12 +9,13 @@ import org.testng.annotations.Test;
 import com.qa.opencart.base.BaseTest;
 import com.qa.opencart.constants.AppConstants;
 
+import io.qameta.allure.Description;
 import io.qameta.allure.Step;
 
 public class AccountsPageTest extends BaseTest {
 
+	@Description("Login to the app")
 	@BeforeClass
-	@Step("Login to the app")
 	public void accSetup() {
 		accPage = loginPage.doLogin(prop.getProperty("username"), prop.getProperty("password"));;
 	}
