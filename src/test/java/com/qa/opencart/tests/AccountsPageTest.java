@@ -43,7 +43,8 @@ public class AccountsPageTest extends BaseTest {
 	public void isSearchFieldExistTest() {
 		Assert.assertTrue(accPage.isSearchFieldExist());
 	}
-	@Step("Verify the Account page headers counts")
+	
+	@Description("Verify the Account page headers counts")
 	@Test
 	public void accPageHeadersCountTest() {
 		List<String> actAccPageHeadersList = accPage.getAccountsHeaders();
