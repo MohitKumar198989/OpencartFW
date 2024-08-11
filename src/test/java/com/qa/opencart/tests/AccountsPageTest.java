@@ -52,7 +52,7 @@ public class AccountsPageTest extends BaseTest {
 		Assert.assertEquals(actAccPageHeadersList.size() , AppConstants.ACC_PAGE_HEADER_COUNT);
 	}
 	
-	@Step("Verify the Account page header list")
+	@Description("Verify the Account page header list")
 	@Test
 	public void accPageHeadersTest() {
 		List<String> actAccPageHeadersList = accPage.getAccountsHeaders();
