@@ -12,6 +12,8 @@ import com.qa.opencart.constants.AppConstants;
 import com.qa.opencart.pages.ProductInfoPage;
 import com.qa.opencart.utils.ExcelUtil;
 
+import io.qameta.allure.Description;
+
 public class ProductResultsPageTest extends BaseTest {
 	
 	@BeforeClass
@@ -36,7 +38,7 @@ public class ProductResultsPageTest extends BaseTest {
 	}
 	
 
-
+	@Description("Verify the Product image count")
 	@Test(dataProvider = "getSearchExcelTestData")
 	public void productImagesTest(String searchKey, String productName, String imageCount) {
 		searchResultsPage = accPage.doSearch(searchKey);
