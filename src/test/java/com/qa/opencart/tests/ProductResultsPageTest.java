@@ -46,6 +46,7 @@ public class ProductResultsPageTest extends BaseTest {
 		Assert.assertEquals(String.valueOf(productInfoPage.getProductImagesCount()), imageCount);
 	}
 	
+	@Description("Verify the Product Details on ProductInfoPage")
 	@Test
 	public void productInfoTest() {
 		searchResultsPage = accPage.doSearch("MacBook"); 
