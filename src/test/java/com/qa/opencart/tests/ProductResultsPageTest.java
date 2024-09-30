@@ -20,7 +20,7 @@ public class ProductResultsPageTest extends BaseTest {
 	public void accSetup() {
 		accPage = loginPage.doLogin(prop.getProperty("username"), prop.getProperty("password"));;
 	}
-	
+	//this is the data provider method
 	@DataProvider
 	public Object[][] getSearchData() {
 		return new Object[][] {
