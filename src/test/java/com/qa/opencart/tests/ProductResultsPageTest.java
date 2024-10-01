@@ -31,7 +31,7 @@ public class ProductResultsPageTest extends BaseTest {
 
 		};
 	}
-	
+	//this method used to get the value from AppConstant class
 	@DataProvider
 	public Object[][] getSearchExcelTestData() {
 		return ExcelUtil.getTestData(AppConstants.PRODUCT_DATA_SHEET_NAME);
