@@ -38,6 +38,10 @@ public class ProductInfoPage {
 		eleUtil = new ElementUtil(this.driver);
 	}
 	
+	/**
+	 * 
+	 * @return
+	 */
 	public String getProductHeaderName() {
 		String productHeaderVal = eleUtil.doElementGetText(productHeader);
 		System.out.println("Product header: "+productHeaderVal);
