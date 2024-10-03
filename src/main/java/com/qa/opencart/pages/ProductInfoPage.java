@@ -40,14 +40,17 @@ public class ProductInfoPage {
 	
 	/**
 	 * 
-	 * @return
+	 * @return productHeaderVal
 	 */
 	public String getProductHeaderName() {
 		String productHeaderVal = eleUtil.doElementGetText(productHeader);
 		System.out.println("Product header: "+productHeaderVal);
 		return productHeaderVal;
 	}
-	
+	/**
+	 * 
+	 * @return
+	 */
 	public int getProductImagesCount() {
 		int imagesCount =  eleUtil.waitForVisibilityOfElements(productImages, AppConstants.MEDIUM_DEFAUTT_WAIT).size();
 		System.out.println("Product "+getProductHeaderName()+"images count : "+imagesCount);
