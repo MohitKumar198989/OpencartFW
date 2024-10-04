@@ -56,7 +56,9 @@ public class ProductInfoPage {
 		System.out.println("Product "+getProductHeaderName()+"images count : "+imagesCount);
 		return imagesCount;
 	}
-	
+	/**
+	 * Product details
+	 */
 //	Brand: Apple
 //	Product Code: Product 18
 //	Reward Points: 800
