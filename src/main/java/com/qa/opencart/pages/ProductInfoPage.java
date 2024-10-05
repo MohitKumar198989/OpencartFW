@@ -74,7 +74,9 @@ public class ProductInfoPage {
 		}
 		
 	}
-	
+	/**
+	 * product details 
+	 */
 	private void getProductPriceData() {
 		List<WebElement> metaPriceList =  eleUtil.waitForVisibilityOfElements(productPriceDate, AppConstants.MEDIUM_DEFAUTT_WAIT);
 		
