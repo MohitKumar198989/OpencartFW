@@ -89,6 +89,10 @@ public class ProductInfoPage {
 		productMap.put("extaxprice", productExTaxPrice);
 	}
 		
+	/**
+	 * 
+	 * @return productMap
+	 */
 	public Map<String, String> getproductDetails() {
 		productMap.put("productname", getProductHeaderName());
 		getProductMetaData();
