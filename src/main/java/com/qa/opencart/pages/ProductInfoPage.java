@@ -90,7 +90,7 @@ public class ProductInfoPage {
 	}
 		
 	/**
-	 * 
+	 * product details 
 	 * @return productMap
 	 */
 	public Map<String, String> getproductDetails() {
