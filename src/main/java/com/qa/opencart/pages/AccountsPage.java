@@ -35,6 +35,10 @@ public class AccountsPage {
 		}
 	
 	//page actions :
+	/**
+	 * 
+	 * @return title
+	 */
 	@Step("get account page title")
 	public String getAccPageTitle()
 	{
