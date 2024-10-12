@@ -33,7 +33,10 @@ public class LoginPage {
 		this.driver=driver;
 		eleUtil =new ElementUtil(this.driver);
 	}
-	
+	/**
+	 * this method getting login page title
+	 * @return title
+	 */
 	//page/actions/methods:
 	@Step("getting login page title")
 	public String getLoginPageTitle() {
