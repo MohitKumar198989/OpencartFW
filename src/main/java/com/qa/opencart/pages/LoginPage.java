@@ -47,7 +47,7 @@ public class LoginPage {
 	}
 	
 	/**
-	 * 
+	 * this method getting login page url
 	 * @return url
 	 */
 	
