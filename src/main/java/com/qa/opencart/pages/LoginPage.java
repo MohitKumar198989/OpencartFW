@@ -58,7 +58,10 @@ public class LoginPage {
 		return url;
 
 	}
-	
+	/**
+	 * this method return true if forgot pwd link exist
+	 * @return Boolean
+	 */
 	@Step("checking forgot pwd link exist")
 	public boolean isForgotPwdLinkExist() {
 		
