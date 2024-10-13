@@ -68,7 +68,11 @@ public class LoginPage {
 		return eleUtil.waitForVisibilityOfElement(forgotPwdLink, AppConstants.SHORT_DEFAUTT_WAIT).isDisplayed();
 
 	}
-	
+	/**
+	 * this method return ture if app logo exist
+	 * 
+	 * @return Boolean
+	 */
 	@Step("checking logo exist")
 	public boolean isLogoExist() {
 		
