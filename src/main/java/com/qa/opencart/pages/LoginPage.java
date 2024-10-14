@@ -83,7 +83,7 @@ public class LoginPage {
 	 * 
 	 * @param username
 	 * @param pwd
-	 * @return
+	 * @return AccountsPage
 	 */
 	
 	@Step("username is : {0} and password {1} ")
@@ -97,7 +97,10 @@ public class LoginPage {
 		return new AccountsPage(driver);
 		
 	}
-	
+	/**
+	 * This method is to navigating to register page 
+	 * @return RegisterPage
+	 */
 	@Step("navigating to register page")
 	public RegisterPage navigateToRegisterPage() {
 		eleUtil.waitForVisibilityOfElement(registerLink, AppConstants.MEDIUM_DEFAUTT_WAIT).click();
