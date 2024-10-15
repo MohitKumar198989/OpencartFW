@@ -69,7 +69,7 @@ public class LoginPage {
 
 	}
 	/**
-	 * this method return ture if app logo exist
+	 * this method return true if app logo exist
 	 * 
 	 * @return Boolean
 	 */
@@ -80,7 +80,7 @@ public class LoginPage {
 	
 	}
 	/**
-	 * 
+	 * this method login to the application
 	 * @param username
 	 * @param pwd
 	 * @return AccountsPage
