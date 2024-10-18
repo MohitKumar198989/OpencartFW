@@ -30,7 +30,7 @@ public class ProductInfoPage {
 	
 	// page const...
 /**
- * 
+ * this is the const
  * @param driver
  */
 	public ProductInfoPage(WebDriver driver) {
@@ -39,7 +39,7 @@ public class ProductInfoPage {
 	}
 	
 	/**
-	 * 
+	 * this method get the header value
 	 * @return productHeaderVal
 	 */
 	public String getProductHeaderName() {
