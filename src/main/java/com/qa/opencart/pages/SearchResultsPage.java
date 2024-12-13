@@ -25,9 +25,9 @@ public class SearchResultsPage {
 		eleUtil = new ElementUtil(this.driver);
 	}
 	/**
-	 * 
+	 * This method is for select the product  
 	 * @param productName
-	 * @return
+	 * @return 
 	 */
 	@Step("Select Product from SearchResultsPage")
 	public ProductInfoPage selectProduct(String productName) {
