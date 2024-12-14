@@ -17,7 +17,7 @@ public class SearchResultsPage {
 
 	// page const...
 /**
- * 
+ * This is a const
  * @param driver
  */
 	public SearchResultsPage(WebDriver driver) {
