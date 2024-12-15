@@ -33,6 +33,12 @@ public class BaseTest {
 	
 	@Parameters({"browser","browserversion","testname"})
 	@BeforeTest
+	/**
+	 * 
+	 * @param browserName
+	 * @param browserVersion
+	 * @param testName
+	 */
 	public void setup(String browserName, String browserVersion, String testName) {
 		df=new DriverFactory();
 		prop = df.initProp();
