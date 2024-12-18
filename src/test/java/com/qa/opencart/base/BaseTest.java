@@ -34,7 +34,7 @@ public class BaseTest {
 	@Parameters({"browser","browserversion","testname"})
 	@BeforeTest
 	/**
-	 * 
+	 * This method initialize the property file.
 	 * @param browserName
 	 * @param browserVersion
 	 * @param testName
