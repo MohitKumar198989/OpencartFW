@@ -34,7 +34,7 @@ public class BaseTest {
 	@Parameters({"browser","browserversion","testname"})
 	@BeforeTest
 	/**
-	 * This method initialize the property file.
+	 * This method initialize the prop class.
 	 * @param browserName
 	 * @param browserVersion
 	 * @param testName
@@ -53,7 +53,9 @@ public class BaseTest {
 		loginPage = new LoginPage(driver);
 		softAssert = new SoftAssert();
 	}
-	
+	/**
+	 * This method is used for close/quit the browser
+	 */
 	
 	@AfterTest
 	public void tearDown() {
