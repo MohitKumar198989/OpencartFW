@@ -28,6 +28,11 @@ public class ElementUtil {
 	
 	private WebDriver driver;  
 	
+	/**
+	 * This is constructor of this class
+	 * @param driver
+	 */
+	
 	public ElementUtil(WebDriver driver) {
 		this.driver=driver;
 	}
