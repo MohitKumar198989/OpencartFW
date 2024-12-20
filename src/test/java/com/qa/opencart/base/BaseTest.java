@@ -54,7 +54,7 @@ public class BaseTest {
 		softAssert = new SoftAssert();
 	}
 	/**
-	 * This method is used for close/quit the browser
+	 * This method is used for close/quit the web browser
 	 */
 	
 	@AfterTest
