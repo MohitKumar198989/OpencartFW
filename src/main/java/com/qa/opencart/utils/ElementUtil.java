@@ -36,7 +36,12 @@ public class ElementUtil {
 	public ElementUtil(WebDriver driver) {
 		this.driver=driver;
 	}
-	
+	/**
+	 * 
+	 * @param locatorType
+	 * @param locatorValue
+	 * @return
+	 */
 	public By getBy(String locatorType, String locatorValue ) {
 		By by= null;
 		
