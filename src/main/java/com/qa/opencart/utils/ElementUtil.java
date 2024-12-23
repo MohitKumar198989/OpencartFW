@@ -89,7 +89,12 @@ public class ElementUtil {
 //	public void doSendKeys(String locatorType, String locatorValue, String value) {
 //		getElement(getBy(locatorType, locatorValue)).sendKeys(value);
 //	}
-	
+	/**
+	 * 
+	 * @param locatorType
+	 * @param locatorValue
+	 * @param value
+	 */
 	public void doSendKeys(String locatorType, String locatorValue, String value) {
 		getElement(locatorType, locatorValue).sendKeys(value);
 	}
