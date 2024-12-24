@@ -90,11 +90,12 @@ public class ElementUtil {
 //		getElement(getBy(locatorType, locatorValue)).sendKeys(value);
 //	}
 	/**
-	 * 
+	 * This method is used to enter the value
 	 * @param locatorType
 	 * @param locatorValue
 	 * @param value
 	 */
+	
 	public void doSendKeys(String locatorType, String locatorValue, String value) {
 		getElement(locatorType, locatorValue).sendKeys(value);
 	}
