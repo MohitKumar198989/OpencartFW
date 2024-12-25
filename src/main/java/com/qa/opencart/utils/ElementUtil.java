@@ -37,6 +37,7 @@ public class ElementUtil {
 		this.driver=driver;
 	}
 	/**
+	 * This method select the element through its element locator
 	 * 
 	 * @param locatorType
 	 * @param locatorValue
@@ -100,6 +101,11 @@ public class ElementUtil {
 		getElement(locatorType, locatorValue).sendKeys(value);
 	}
 	
+	/**
+	 * This method used to enter the value
+	 * @param locator
+	 * @param value
+	 */
 	@Step("entering value {1} to element: {0}")
 	public void doSendKeys(By locator, String value) {
 		getElement(locator).sendKeys(value);
