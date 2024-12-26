@@ -110,7 +110,10 @@ public class ElementUtil {
 	public void doSendKeys(By locator, String value) {
 		getElement(locator).sendKeys(value);
 	}
-	
+	/**
+	 * This method is used to click on the element 
+	 * @param locator
+	 */
 	@Step("clicking on element : {0}")
 	public void doClick(By locator) {
 		getElement(locator).click();
