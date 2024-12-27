@@ -118,7 +118,11 @@ public class ElementUtil {
 	public void doClick(By locator) {
 		getElement(locator).click();
 	}
-	
+	/**
+	 * 
+	 * @param locatorType
+	 * @param locatorValue
+	 */
 	public void doClick(String locatorType, String locatorValue) {
 		getElement(locatorType, locatorValue).click();
 	}
