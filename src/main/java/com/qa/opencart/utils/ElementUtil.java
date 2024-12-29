@@ -119,7 +119,7 @@ public class ElementUtil {
 		getElement(locator).click();
 	}
 	/**
-	 * 
+	 * This method is used to click on the element
 	 * @param locatorType
 	 * @param locatorValue
 	 */
