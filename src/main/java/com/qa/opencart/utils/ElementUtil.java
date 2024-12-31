@@ -127,7 +127,7 @@ public class ElementUtil {
 		getElement(locatorType, locatorValue).click();
 	}
 	/**
-	 * 
+	 * This method is to get the text
 	 * @param locator
 	 * @return
 	 */
