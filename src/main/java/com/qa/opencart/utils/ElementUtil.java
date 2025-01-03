@@ -135,7 +135,12 @@ public class ElementUtil {
 		return getElement(locator).getText();
 		
 	}
-	
+	/**
+	 * 
+	 * @param locatorType
+	 * @param locatorValue
+	 * @return
+	 */
 	public String doElementGetText(String locatorType, String locatorValue) {
 		return getElement(locatorType, locatorValue).getText();
 		
