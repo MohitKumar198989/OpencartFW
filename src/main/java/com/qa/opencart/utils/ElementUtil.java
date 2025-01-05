@@ -136,7 +136,7 @@ public class ElementUtil {
 		
 	}
 	/**
-	 * 
+	 * This method is to get the text of the web element.
 	 * @param locatorType
 	 * @param locatorValue
 	 * @return
