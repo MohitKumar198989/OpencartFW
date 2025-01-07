@@ -147,7 +147,7 @@ public class ElementUtil {
 	}
 	
 	/**
-	 * 
+	 * This method is to find web element 
 	 * @param locator
 	 * @return
 	 */
