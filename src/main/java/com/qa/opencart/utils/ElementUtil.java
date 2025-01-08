@@ -155,7 +155,11 @@ public class ElementUtil {
 	public WebElement getElement(By locator) {
 		return driver.findElement(locator);
 	}
-	
+	/**
+	 * 
+	 * @param locator
+	 * @return
+	 */
 	public List<WebElement> getElements(By locator) {
 		return driver.findElements(locator);
 	}
