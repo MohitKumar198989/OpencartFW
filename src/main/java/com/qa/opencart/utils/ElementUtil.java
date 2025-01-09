@@ -156,7 +156,7 @@ public class ElementUtil {
 		return driver.findElement(locator);
 	}
 	/**
-	 * 
+	 * This method is to find the web elements list.
 	 * @param locator
 	 * @return
 	 */
