@@ -164,6 +164,12 @@ public class ElementUtil {
 		return driver.findElements(locator);
 	}
 	
+	/**
+	 * 
+	 * @param locatortype
+	 * @param locatorValue
+	 * @return
+	 */
 	public WebElement getElement(String locatortype, String locatorValue) {
 		return driver.findElement(getBy(locatortype, locatorValue));
 	}
