@@ -165,7 +165,7 @@ public class ElementUtil {
 	}
 	
 	/**
-	 * 
+	 * This method to get the web element 
 	 * @param locatortype
 	 * @param locatorValue
 	 * @return
