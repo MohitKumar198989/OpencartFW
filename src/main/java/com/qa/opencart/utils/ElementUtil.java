@@ -174,6 +174,12 @@ public class ElementUtil {
 		return driver.findElement(getBy(locatortype, locatorValue));
 	}
 	
+	/**
+	 * 
+	 * @param locator
+	 * @param attrName
+	 * @return
+	 */
 	public String doGetElementAttribute(By locator, String attrName) {
 		return getElement(locator).getAttribute(attrName);
 	}
