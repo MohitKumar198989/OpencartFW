@@ -175,7 +175,7 @@ public class ElementUtil {
 	}
 	
 	/**
-	 * This method is used to get attribute 
+	 * This method is used to get the element attribute 
 	 * @param locator
 	 * @param attrName
 	 * @return
