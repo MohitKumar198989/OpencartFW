@@ -187,6 +187,11 @@ public class ElementUtil {
 	
 	
 	//*************Select drop down Utils***********//
+	/**
+	 * 
+	 * @param locator
+	 * @return
+	 */
 	
 	private Select createSelect(By locator) {
 		Select select=new Select(getElement(locator));
