@@ -188,7 +188,7 @@ public class ElementUtil {
 	
 	//*************Select drop down Utils***********//
 	/**
-	 * 
+	 * This method is create a object of the Select Class 
 	 * @param locator
 	 * @return
 	 */
