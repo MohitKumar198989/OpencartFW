@@ -197,7 +197,11 @@ public class ElementUtil {
 		Select select=new Select(getElement(locator));
 		return select;
 	}
-	
+	/**
+	 * 
+	 * @param locator
+	 * @param index
+	 */
 	public void  doSelectDropDownByIndex(By locator, int index) {
 		//Select select = new Select(getElement(locator));
 		createSelect(locator).selectByIndex(index);
