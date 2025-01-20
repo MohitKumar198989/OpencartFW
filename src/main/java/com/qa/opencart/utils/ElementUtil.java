@@ -198,7 +198,7 @@ public class ElementUtil {
 		return select;
 	}
 	/**
-	 * 
+	 * This method is used to select dropdown value by index value
 	 * @param locator
 	 * @param index
 	 */
