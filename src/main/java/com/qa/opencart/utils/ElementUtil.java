@@ -208,7 +208,11 @@ public class ElementUtil {
 		// select.selectByIndex(index);
 		
 	}
-	
+	/**
+	 * 
+	 * @param locator
+	 * @param visibleText
+	 */
 	public void  doSelectDropDownByVisibleTest(By locator, String visibleText) {
 		//Select select = new Select(getElement(locator));
 		createSelect(locator).selectByVisibleText(visibleText);;
