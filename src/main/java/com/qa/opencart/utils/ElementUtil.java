@@ -218,7 +218,11 @@ public class ElementUtil {
 		createSelect(locator).selectByVisibleText(visibleText);;
 		
 	}
-	
+	/**
+	 * 
+	 * @param locator
+	 * @param value
+	 */
 	public void  doSelectDropDownByValue(By locator, String value) {
 		//Select select = new Select(getElement(locator));
 		createSelect(locator).selectByValue(value);;
