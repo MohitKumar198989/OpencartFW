@@ -228,7 +228,11 @@ public class ElementUtil {
 		createSelect(locator).selectByValue(value);;
 		
 	}
-	
+	/**
+	 * 
+	 * @param locator
+	 * @return
+	 */
 	public int getDropDownOptionsCount(By locator) {
 		//Select select = new Select(getElement(locator));
 		return createSelect(locator).getOptions().size();
