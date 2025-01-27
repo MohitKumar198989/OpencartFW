@@ -229,7 +229,7 @@ public class ElementUtil {
 		
 	}
 	/**
-	 * 
+	 * This method to get DropDown Options Count
 	 * @param locator
 	 * @return
 	 */
@@ -238,6 +238,11 @@ public class ElementUtil {
 		return createSelect(locator).getOptions().size();
 		
 	}
+	/**
+	 * 
+	 * @param locator
+	 * @return
+	 */
 	
 	public List<String> getDropDownOptions(By locator) {
 		//Select select = new Select(getElement(locator));
