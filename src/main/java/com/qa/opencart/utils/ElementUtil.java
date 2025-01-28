@@ -239,7 +239,7 @@ public class ElementUtil {
 		
 	}
 	/**
-	 * 
+	 * this method is get the DropDownOptions through locator 
 	 * @param locator
 	 * @return
 	 */
