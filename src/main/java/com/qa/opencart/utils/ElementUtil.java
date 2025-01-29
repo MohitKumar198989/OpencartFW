@@ -258,7 +258,11 @@ public class ElementUtil {
 		return optionsTextList;
 		
 	}	
-	
+	/**
+	 * 
+	 * @param locator
+	 * @param dropDownValue
+	 */
 	public void selectDropDownOption(By locator, String dropDownValue) {
 		//Select select = new Select(getElement(locator));
 		
