@@ -280,6 +280,11 @@ public class ElementUtil {
 		}
 	}
 	
+	/**
+	 * 
+	 * @param locator
+	 * @param value
+	 */
 	public void selectDropDownValue(By locator , String value) {
 		List<WebElement> optionsList= getElements(locator);
 		for (WebElement e: optionsList) {
