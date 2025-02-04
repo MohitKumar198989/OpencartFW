@@ -281,7 +281,7 @@ public class ElementUtil {
 	}
 	
 	/**
-	 * 
+	 * This method is used to select the dropdown value
 	 * @param locator
 	 * @param value
 	 */
