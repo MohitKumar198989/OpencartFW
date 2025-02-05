@@ -296,7 +296,12 @@ public class ElementUtil {
 		}
 		
 	}
-	
+
+	/**
+	 * 
+	 * @param locator
+	 * @return
+	 */
 	public boolean isDropDownMultipleVaules(By locator) {
 		//Select select = new Select(getElement(locator));
 		return createSelect(locator).isMultiple()?true:false;
