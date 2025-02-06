@@ -344,6 +344,11 @@ public class ElementUtil {
 	
 	//******************Actions Utils ************//
 	
+	/**
+	 * 
+	 * @param locator
+	 * @param value
+	 */
 	public void doActionsSendKeys(By locator, String value) {
 		Actions act = new Actions(driver);
 		act.sendKeys(getElement(locator), value).perform();
