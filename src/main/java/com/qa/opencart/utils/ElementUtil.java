@@ -345,7 +345,7 @@ public class ElementUtil {
 	//******************Actions Utils ************//
 	
 	/**
-	 * 
+	 * This method is used to enter the value 
 	 * @param locator
 	 * @param value
 	 */
