@@ -353,7 +353,10 @@ public class ElementUtil {
 		Actions act = new Actions(driver);
 		act.sendKeys(getElement(locator), value).perform();
 	}
-	
+	/**
+	 * 
+	 * @param locator
+	 */
 	public void doActionsClick(By locator) {
 		Actions act = new Actions(driver);
 		act.click(getElement(locator)).perform();
