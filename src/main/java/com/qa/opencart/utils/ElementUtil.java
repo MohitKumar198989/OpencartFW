@@ -354,7 +354,7 @@ public class ElementUtil {
 		act.sendKeys(getElement(locator), value).perform();
 	}
 	/**
-	 * 
+	 * This method click on the element 
 	 * @param locator
 	 */
 	public void doActionsClick(By locator) {
