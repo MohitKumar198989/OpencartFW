@@ -361,7 +361,12 @@ public class ElementUtil {
 		Actions act = new Actions(driver);
 		act.click(getElement(locator)).perform();
 	}
-	
+	/**
+	 * 
+	 * @param parentMenuLocator
+	 * @param childMenuLocator
+	 * @throws InterruptedException
+	 */
 	
 	public void twoLevelMenu(By parentMenuLocator, By childMenuLocator) throws InterruptedException {
 		Actions act =new Actions(driver);
