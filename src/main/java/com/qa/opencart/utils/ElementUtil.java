@@ -362,7 +362,7 @@ public class ElementUtil {
 		act.click(getElement(locator)).perform();
 	}
 	/**
-	 * 
+	 * the method is used to move to main menu to sub menu
 	 * @param parentMenuLocator
 	 * @param childMenuLocator
 	 * @throws InterruptedException
