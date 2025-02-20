@@ -374,7 +374,14 @@ public class ElementUtil {
 		Thread.sleep(1000);
 		doClick(childMenuLocator);
 	}
-			
+		/**
+		 * 
+		 * @param parentMenuLocator
+		 * @param firstchildMenuLocator
+		 * @param secondChildMenuLocator
+		 * @param thirdChildMenuLocator
+		 * @throws InterruptedException
+		 */
 	public  void fourLevelMenuHandle(By parentMenuLocator,By firstchildMenuLocator,By secondChildMenuLocator,By thirdChildMenuLocator ) throws InterruptedException {
 		
 		Actions act = new Actions(driver);
