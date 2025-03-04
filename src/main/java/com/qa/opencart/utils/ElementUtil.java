@@ -307,7 +307,7 @@ public class ElementUtil {
 		return createSelect(locator).isMultiple()?true:false;
 	}
 	 /**
-	  * This method is used to select the value from the drop down . It can selet
+	  * This method is used to select the value from the dropdown . It can select
 	  * 1.single selection
 	  * 2.Multiple selection 
 	  * 3.All selection : please pass "all" as a value to select all the values
@@ -375,7 +375,7 @@ public class ElementUtil {
 		doClick(childMenuLocator);
 	}
 		/**
-		 * 
+		 * this method is used to move to main menu to sub menu and sub menu to further sub menu.
 		 * @param parentMenuLocator
 		 * @param firstchildMenuLocator
 		 * @param secondChildMenuLocator
