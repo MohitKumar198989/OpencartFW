@@ -402,7 +402,11 @@ public class ElementUtil {
 		doClick(thirdChildMenuLocator);
 		
 	}
-	
+	/**
+	 * 
+	 * @param locator
+	 * @param value
+	 */
 	public void doActionsSendKeysWithPause(By locator,String value) {
 
 		Actions act = new Actions(driver);
