@@ -403,7 +403,7 @@ public class ElementUtil {
 		
 	}
 	/**
-	 * 
+	 * this method is used to enter the value with pause.
 	 * @param locator
 	 * @param value
 	 */
