@@ -464,7 +464,11 @@ public class ElementUtil {
 	    return  wait.until(ExpectedConditions.visibilityOfElementLocated(locator));	
 	    
 	}
-	
+	/**
+	 * 
+	 * @param locator
+	 * @param timout
+	 */
 	public void doClickwithWait(By locator, int timout) {
 		waitForVisibilityOfElement(locator, timout).click();
 	}
