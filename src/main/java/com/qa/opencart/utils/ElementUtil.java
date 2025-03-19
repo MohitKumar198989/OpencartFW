@@ -473,7 +473,12 @@ public class ElementUtil {
 		waitForVisibilityOfElement(locator, timout).click();
 	}
 	
-	
+	/**
+	 * 
+	 * @param locator
+	 * @param value
+	 * @param timout
+	 */
  
 	public void doSendKeysWait(By locator, String value, int timout) {
 		waitForVisibilityOfElement(locator, timout).sendKeys(value);;
