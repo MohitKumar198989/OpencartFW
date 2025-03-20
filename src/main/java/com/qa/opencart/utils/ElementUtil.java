@@ -474,7 +474,7 @@ public class ElementUtil {
 	}
 	
 	/**
-	 * 
+	 * this method is used to click on the element with wait 
 	 * @param locator
 	 * @param value
 	 * @param timout
