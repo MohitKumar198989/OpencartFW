@@ -509,7 +509,12 @@ public class ElementUtil {
 	    
 	}
 	
-	
+	/**
+	 * 
+	 * @param titleFraction
+	 * @param timeOut
+	 * @return
+	 */
 	public String waitForTitleContains(String titleFraction, int timeOut) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeOut));
 		try {
