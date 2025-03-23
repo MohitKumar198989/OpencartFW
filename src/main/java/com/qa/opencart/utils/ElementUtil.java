@@ -510,7 +510,7 @@ public class ElementUtil {
 	}
 	
 	/**
-	 * 
+	 * this method is used to get the page title 
 	 * @param titleFraction
 	 * @param timeOut
 	 * @return
