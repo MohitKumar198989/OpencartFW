@@ -531,6 +531,12 @@ public class ElementUtil {
 	}
 	
 	@Step("waiting for the page title : {0} and titmeout: {1}")
+	/**
+	 * 
+	 * @param title
+	 * @param timeOut
+	 * @return
+	 */
 	public String waitForTitleIs(String title, int timeOut) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeOut));
 		try {
