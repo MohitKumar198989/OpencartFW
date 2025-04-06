@@ -532,7 +532,7 @@ public class ElementUtil {
 	
 	@Step("waiting for the page title : {0} and titmeout: {1}")
 	/**
-	 * 
+	 * this method is used to get the title of the page
 	 * @param title
 	 * @param timeOut
 	 * @return
