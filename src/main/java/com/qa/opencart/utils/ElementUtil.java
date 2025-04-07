@@ -553,6 +553,12 @@ public class ElementUtil {
 	}
 	
 	@Step("waiting for url : {0} and timeout{1}")
+	/**
+	 * 
+	 * @param urlFraction
+	 * @param timeOut
+	 * @return
+	 */
 	public String waitForURLContains(String urlFraction, int timeOut) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeOut));
 		try {
