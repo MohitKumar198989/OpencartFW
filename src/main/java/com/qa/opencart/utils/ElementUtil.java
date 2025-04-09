@@ -573,6 +573,7 @@ public class ElementUtil {
 		return null;
 		
 	}
+	@Step("waiting for url : {0} and timeout{1}")
 	
 	public String waitForURLToBe(String url, int timeOut) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeOut));
