@@ -575,7 +575,7 @@ public class ElementUtil {
 	}
 	@Step("waiting for url : {0} and timeout{1}")
 	/**
-	 * 
+	 * this method is used to get url of the web page 
 	 * @param url
 	 * @param timeOut
 	 * @return
