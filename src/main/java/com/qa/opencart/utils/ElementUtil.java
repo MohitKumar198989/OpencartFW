@@ -595,7 +595,11 @@ public class ElementUtil {
 		
 	}
 	
-	
+	/**
+	 * 
+	 * @param timeOut
+	 * @return
+	 */
 	public Alert waitForJSAlert(int timeOut) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		return wait.until(ExpectedConditions.alertIsPresent());
