@@ -596,7 +596,7 @@ public class ElementUtil {
 	}
 	
 	/**
-	 * 
+	 * this method is use to check the alert is present on the web page
 	 * @param timeOut
 	 * @return
 	 */
