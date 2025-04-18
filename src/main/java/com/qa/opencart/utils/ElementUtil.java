@@ -596,7 +596,7 @@ public class ElementUtil {
 	}
 	
 	/**
-	 * this method is use to check the alert is present on the web page
+	 * this method is use to check the js alert is present on the web page
 	 * @param timeOut
 	 * @return
 	 */
@@ -604,7 +604,10 @@ public class ElementUtil {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		return wait.until(ExpectedConditions.alertIsPresent());
 	}
-	
+	/**
+	 * this method is used to accept js alert 
+	 * @param timeOut
+	 */
 	public void acceptJSAlert(int timeOut) {
 		waitForJSAlert(timeOut).accept();;
 	}
