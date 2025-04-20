@@ -611,7 +611,10 @@ public class ElementUtil {
 	public void acceptJSAlert(int timeOut) {
 		waitForJSAlert(timeOut).accept();;
 	}
-	
+	/**
+	 * this method is used to dismiss js alert
+	 * @param timeOut
+	 */
 	public void dismissJSAlert(int timeOut) {
 		waitForJSAlert(timeOut).dismiss();
 	}
