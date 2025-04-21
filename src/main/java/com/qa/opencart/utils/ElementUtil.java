@@ -618,7 +618,11 @@ public class ElementUtil {
 	public void dismissJSAlert(int timeOut) {
 		waitForJSAlert(timeOut).dismiss();
 	}
-	
+	/**
+	 * 
+	 * @param timeOut
+	 * @return
+	 */
 	public String getJSAlertText(int timeOut) {
 		return waitForJSAlert(timeOut).getText();
 	}
