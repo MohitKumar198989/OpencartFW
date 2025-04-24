@@ -619,7 +619,7 @@ public class ElementUtil {
 		waitForJSAlert(timeOut).dismiss();
 	}
 	/**
-	 * 
+	 * this is method is used to get text from the js alert
 	 * @param timeOut
 	 * @return
 	 */
