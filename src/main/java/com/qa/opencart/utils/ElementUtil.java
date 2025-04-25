@@ -626,7 +626,11 @@ public class ElementUtil {
 	public String getJSAlertText(int timeOut) {
 		return waitForJSAlert(timeOut).getText();
 	}
-	
+	/**
+	 * 
+	 * @param timeOut
+	 * @param value
+	 */
 	public void enterValueOnJSAlertText(int timeOut, String value) {
 		waitForJSAlert(timeOut).sendKeys(value);
 	}
