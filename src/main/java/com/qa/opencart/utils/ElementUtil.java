@@ -627,7 +627,7 @@ public class ElementUtil {
 		return waitForJSAlert(timeOut).getText();
 	}
 	/**
-	 * 
+	 * this method is used to enter the text on the js alert 
 	 * @param timeOut
 	 * @param value
 	 */
