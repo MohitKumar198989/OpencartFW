@@ -634,7 +634,11 @@ public class ElementUtil {
 	public void enterValueOnJSAlertText(int timeOut, String value) {
 		waitForJSAlert(timeOut).sendKeys(value);
 	}
-	
+	/**
+	 * 
+	 * @param framelocator
+	 * @param timeout
+	 */
 	public void  waitForFrameByLocator(By framelocator,int timeout) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeout));
 	    wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(framelocator));	
