@@ -635,7 +635,7 @@ public class ElementUtil {
 		waitForJSAlert(timeOut).sendKeys(value);
 	}
 	/**
-	 * 
+	 * this method is used to switched to frame
 	 * @param framelocator
 	 * @param timeout
 	 */
