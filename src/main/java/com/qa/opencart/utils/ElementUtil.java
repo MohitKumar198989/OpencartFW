@@ -653,7 +653,7 @@ public class ElementUtil {
 	    wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(frameIndex));	
 	}
 	/**
-	 * 
+	 * this method is used to switch to frame by frame id or frame name
 	 * @param IDOrName
 	 * @param timeout
 	 */
