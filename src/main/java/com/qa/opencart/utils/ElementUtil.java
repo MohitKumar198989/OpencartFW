@@ -661,7 +661,11 @@ public class ElementUtil {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeout));
 	    wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(IDOrName));	
 	}
-	
+	/**
+	 *
+	 * @param frameElement
+	 * @param timeout
+	 */
 	public void  waitForFrameByElement(String frameElement,int timeout) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeout));
 	    wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(frameElement));	
