@@ -662,7 +662,7 @@ public class ElementUtil {
 	    wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(IDOrName));	
 	}
 	/**
-	 *
+	 * 
 	 * @param frameElement
 	 * @param timeout
 	 */
@@ -670,7 +670,12 @@ public class ElementUtil {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeout));
 	    wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(frameElement));	
 	}
-	
+	/**
+	 * 
+	 * @param timeOut
+	 * @param expectedNumberOfWindow
+	 * @return
+	 */
 	public boolean checkNewWindowExist(int timeOut, int expectedNumberOfWindow) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeOut));
 		try {
