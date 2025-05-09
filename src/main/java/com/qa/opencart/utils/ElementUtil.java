@@ -701,7 +701,13 @@ public class ElementUtil {
 			System.out.println("element is not clickable or enabled...");
 		}
 	}
-	
+	/**
+	 * 
+	 * @param locator
+	 * @param timeOut
+	 * @param intervalTime
+	 * @return
+	 */
 	public WebElement waitForElementWithFluentWait(By locator, int timeOut, int intervalTime) {
 		 Wait<WebDriver> wait =new FluentWait<WebDriver>(driver)
 					.withTimeout(Duration.ofSeconds(timeOut))
