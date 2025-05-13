@@ -719,7 +719,12 @@ public class ElementUtil {
 		 return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
 	}
 	
-	
+	/**
+	 * 
+	 * @param frameIDOrName
+	 * @param timeOut
+	 * @param intervalTime
+	 */
 	public void waitForFrameWithFluentWait(String frameIDOrName, int timeOut, int intervalTime) {
 		 Wait<WebDriver> wait =new FluentWait<WebDriver>(driver)
 					.withTimeout(Duration.ofSeconds(timeOut))
