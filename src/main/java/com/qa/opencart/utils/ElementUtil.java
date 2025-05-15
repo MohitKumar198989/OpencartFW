@@ -734,7 +734,11 @@ public class ElementUtil {
 					
 		 wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(frameIDOrName));
 	}
-	
+	/**
+	 * 
+	 * @param timeOut
+	 * @param intervalTime
+	 */
 	public void waitForJSAlertWithFluentWait( int timeOut, int intervalTime) {
 		 Wait<WebDriver> wait =new FluentWait<WebDriver>(driver)
 					.withTimeout(Duration.ofSeconds(timeOut))
