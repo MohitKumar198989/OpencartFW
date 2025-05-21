@@ -750,7 +750,12 @@ public class ElementUtil {
 	}
 	
 	//****************Custom Wait ********************//
-	
+	/**
+	 * 
+	 * @param locator
+	 * @param timeOut
+	 * @return
+	 */
 	public WebElement retryingElement(By locator, int timeOut) {
 		WebElement element = null;
 		int attempts=0;
