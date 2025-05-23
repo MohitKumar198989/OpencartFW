@@ -784,7 +784,13 @@ public class ElementUtil {
 		return element;
 	}
 	
-	
+	/**
+	 * 
+	 * @param locator
+	 * @param timeOut
+	 * @param intervalTime
+	 * @return
+	 */
 	public WebElement retryingElement(By locator, int timeOut, int intervalTime) {
 		WebElement element = null;
 		int attempts=0;
