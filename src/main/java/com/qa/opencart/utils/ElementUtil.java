@@ -818,7 +818,11 @@ public class ElementUtil {
 		}
 		return element;
 	}
-	
+	/**
+	 * 
+	 * @param timeOut
+	 * @return
+	 */
 	public Boolean isPageLoaded(int timeOut) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeOut)) ;
 		String flag=wait.until(ExpectedConditions.jsReturnsValue("return document.readyState === 'complete'")).toString();
