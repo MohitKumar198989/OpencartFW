@@ -38,7 +38,7 @@ public class DriverFactory {
 		optionsManager = new OptionsManager(prop);
 
 		switch (browserName.toUpperCase()) {
-		case "chrome":
+		case "CHROME":
 
 			if (Boolean.parseBoolean(prop.getProperty("remote"))) {
 				// run it on grid:
@@ -49,7 +49,7 @@ public class DriverFactory {
 			}
 			break;
 
-		case "firefox":
+		case "FIREFOX":
 			if (Boolean.parseBoolean(prop.getProperty("remote"))) {
 				// run it on grid:
 				initRemoteDriver(browserName);
@@ -59,7 +59,7 @@ public class DriverFactory {
 			}
 			break;
 
-		case "edge":
+		case "EDGE":
 			if (Boolean.parseBoolean(prop.getProperty("remote"))) {
 				// run it on grid:
 				initRemoteDriver(browserName);
@@ -69,7 +69,7 @@ public class DriverFactory {
 			}
 			break;
 
-		case "safari":
+		case "SAFARI":
 			tlDriver.set(new SafariDriver());
 			break;
 
