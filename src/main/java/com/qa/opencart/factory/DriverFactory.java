@@ -37,7 +37,7 @@ public class DriverFactory {
 
 		optionsManager = new OptionsManager(prop);
 
-		switch (browserName.toLowerCase().trim()) {
+		switch (browserName.toUpperCase()) {
 		case "chrome":
 
 			if (Boolean.parseBoolean(prop.getProperty("remote"))) {
