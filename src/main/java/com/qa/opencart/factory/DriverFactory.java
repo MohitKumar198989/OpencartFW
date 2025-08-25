@@ -96,16 +96,16 @@ public class DriverFactory {
 		System.out.println("Running tests on GRID with browser: " + browserName);
 
 		try {
-			switch (browserName.toLowerCase().trim()) {
-			case "chrome":
+			switch (browserName.toUpperCase()) {
+			case "CHROME":
 				tlDriver.set(
 						new RemoteWebDriver(new URL(prop.getProperty("huburl")), optionsManager.getChromeOptions()));
 				break;
-			case "firefox":
+			case "FIREFOX":
 				tlDriver.set(
 						new RemoteWebDriver(new URL(prop.getProperty("huburl")), optionsManager.getFirefoxOptions()));
 				break;
-			case "edge":
+			case "EDGE":
 				tlDriver.set(new RemoteWebDriver(new URL(prop.getProperty("huburl")), optionsManager.getEdgeOptions()));
 				break;
 
@@ -140,20 +140,20 @@ public class DriverFactory {
 			}
 
 			else {
-				switch (envName.toLowerCase().trim()) {
-				case "qa":
+				switch (envName.toUpperCase()) {
+				case "QA":
 					ip = new FileInputStream("./src/test/resources/config/config.qa.properties");
 					break;
-				case "dev":
+				case "DEV":
 					ip = new FileInputStream("./src/test/resources/config/config.dev.properties");
 					break;
-				case "stage":
+				case "STAGE":
 					ip = new FileInputStream("./src/test/resources/config/config.stage.properties");
 					break;
-				case "uat":
+				case "UAT":
 					ip = new FileInputStream("./src/test/resources/config/config.uat.properties");
 					break;
-				case "prod":
+				case "PROD":
 					ip = new FileInputStream("./src/test/resources/config/config.properties");
 					break;
 
